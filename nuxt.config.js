@@ -1,6 +1,13 @@
 import colors from 'vuetify/es5/util/colors'
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/yavue-nuxt/'
+  }
+} : {}
+
 export default {
+  routerBase,
   server: {
     port: 8000, // default: 3000
     host: '0.0.0.0', // default: localhost
