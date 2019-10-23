@@ -1,8 +1,12 @@
 <?php
 namespace Deployer;
 
-require 'vendor/autoload.php';
-require 'recipe/npm.php';
+require 'recipe/zend_framework.php';
+
+task('test', function () {
+    writeln('Hello world');
+});
+
 
 // Project name
 set('application', 'YAWIK-nuxt');
@@ -30,7 +34,7 @@ set('repository', 'git@github.com:yawik/yavue-nuxt.git');
 #    'test/sandbox/public/static',
 #]);
 
-set('default_stage', 'prod');
+#set('default_stage', 'prod');
 
 // Hosts
 
@@ -42,5 +46,9 @@ host('nuxt.yawik.org')
     ->set('writableusesudo', true);   
     
 // [Optional] if deploy fails automatically unlock.
-after('deploy:failed', 'deploy:unlock');
+#after('deploy:failed', 'deploy:unlock');
 
+task('pwd', function () {
+    $result = run('pwd');
+    writeln("Current dir: $result");
+});
