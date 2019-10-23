@@ -1,5 +1,10 @@
 {
-    "require-dev": {
-        "deployer/recipes": "^6.2"
-    }
+    "name": "cbleek/yawik-nuxt",
+    "authors": [
+        {
+            "name": "Carsten Bleek",
+            "email": "bleek@cross-solution.de"
+        }
+    ],
+    "require": {}
 }

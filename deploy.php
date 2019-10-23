@@ -1,9 +1,7 @@
 <?php
 namespace Deployer;
 
-ini_set('include_path', ini_get('include_path') . PATH_SEPARATOR . 'vendor/deployer/recipes');
-
-require 'recipe/npm.php';
+require 'recipe/zend_framework.php';
 
 
 // Project name
@@ -46,5 +44,4 @@ host('nuxt.yawik.org')
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
 
-after('deploy:update_code', 'npm:install');
 
