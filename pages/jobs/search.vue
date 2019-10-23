@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Replace example with a YAWIK Search</h1>
     <v-data-table
       :headers="headers"
       :items="desserts"
