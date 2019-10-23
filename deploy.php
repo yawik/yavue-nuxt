@@ -42,7 +42,7 @@ host('nuxt.yawik.org')
     ->set('writableusesudo', true);   
     
 // [Optional] if deploy fails automatically unlock.
-#after('deploy:failed', 'deploy:unlock');
+after('deploy:failed', 'deploy:unlock');
 
 task('pwd', function () {
     $result = run('pwd');
