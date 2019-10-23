@@ -1,7 +1,7 @@
 <?php
 namespace Deployer;
 
-require 'recipe/zend_framework.php';
+require 'recipe/npm.php';
 
 
 // Project name
@@ -44,7 +44,5 @@ host('nuxt.yawik.org')
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
 
-task('pwd', function () {
-    $result = run('pwd');
-    writeln("Current dir: $result");
-});
+after('deploy:update_code', 'npm:install');
+
