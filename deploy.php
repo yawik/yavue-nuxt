@@ -44,9 +44,14 @@ host('nuxt.yawik.org')
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
 after('deploy:symlink', 'npm');
+after('deploy:cleanup', 'restart');
 
 task('npm', '
     npm i;
     npm run build;
     npm run generate;
+');
+
+task('restart', '
+    systemctl restart nodeserver.service;
 ');
