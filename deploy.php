@@ -45,3 +45,8 @@ host('nuxt.yawik.org')
 after('deploy:failed', 'deploy:unlock');
 
 
+task('build', '
+    npm i;
+    npm run build;
+    npm run renerate";
+');
