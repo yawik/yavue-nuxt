@@ -1,0 +1,14 @@
+{
+    "name": "cbleek/yawik-nuxt",
+    "description": "only need3ed for deployment",
+    "authors": [
+        {
+            "name": "Carsten Bleek",
+            "email": "bleek@cross-solution.de"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "deployer/recipes": "^6.2"
+    }
+}

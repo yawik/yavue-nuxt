@@ -91,3 +91,6 @@ sw.*
 
 # joe backup files 
 *~
+
+# vendor dir of composer
+vendor
