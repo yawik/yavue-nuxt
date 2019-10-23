@@ -8,7 +8,7 @@ require 'recipe/zend_framework.php';
 set('application', 'YAWIK-nuxt');
 
 // Project repository
-set('repository', 'git@github.com:yawik/yavue-nuxt.git');
+set('repository', 'https://github.com/yawik/yavue-nuxt.git');
 
 // Shared files/dirs between deploys 
 #add('shared_files', [
