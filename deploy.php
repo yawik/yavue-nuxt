@@ -48,5 +48,5 @@ after('deploy:symlink', 'npm');
 task('npm', '
     npm i;
     npm run build;
-    npm run renerate;
+    npm run generate;
 ');
