@@ -24,7 +24,6 @@ before_install:
 - ssh-add ~/.ssh/id_rsa
 - curl -LO https://deployer.org/deployer.phar
 - chmod +x deployer.phar
-- composer install
 install:
 - npm install
 - npm run generate
