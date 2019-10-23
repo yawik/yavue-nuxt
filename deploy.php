@@ -3,10 +3,6 @@ namespace Deployer;
 
 require 'recipe/zend_framework.php';
 
-task('test', function () {
-    writeln('Hello world');
-});
-
 
 // Project name
 set('application', 'YAWIK-nuxt');
@@ -34,7 +30,7 @@ set('repository', 'git@github.com:yawik/yavue-nuxt.git');
 #    'test/sandbox/public/static',
 #]);
 
-#set('default_stage', 'prod');
+set('default_stage', 'prod');
 
 // Hosts
 
@@ -42,7 +38,7 @@ host('nuxt.yawik.org')
     ->user('nuxt')
     ->stage('prod')
     ->multiplexing(false) 
-    ->set('deploy_path', '/var/www/production')
+    ->set('deploy_path', '/srv/production')
     ->set('writableusesudo', true);   
     
 // [Optional] if deploy fails automatically unlock.
