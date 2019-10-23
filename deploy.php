@@ -1,7 +1,7 @@
 <?php
 namespace Deployer;
 
-require 'recipe/npm.php';
+require 'vendor/deployer/recipes/recipe/npm.php';
 
 
 // Project name
