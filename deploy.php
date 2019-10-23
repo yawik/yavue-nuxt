@@ -1,7 +1,9 @@
 <?php
 namespace Deployer;
 
-require 'vendor/deployer/recipes/recipe/npm.php';
+ini_set('include_path', ini_get('include_path') . PATH_SEPARATOR . 'vendor/deployer/recipes');
+
+require 'recipe/npm.php';
 
 
 // Project name
