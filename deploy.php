@@ -53,5 +53,5 @@ task('npm', '
 ');
 
 task('restart', '
-    systemctl restart nodeserver.service;
+    systemctl restart nodeserver;
 ');
