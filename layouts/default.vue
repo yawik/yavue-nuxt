@@ -107,7 +107,7 @@ export default {
           to: '/inspire'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-information',
           title: 'Job Search',
           to: '/jobs/search'
         }
