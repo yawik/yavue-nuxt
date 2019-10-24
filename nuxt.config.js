@@ -9,7 +9,6 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 export default {
   routerBase,
   server: {
-    port: 8000, // default: 3000
     host: '0.0.0.0', // default: localhost
   },
   mode: 'universal',
